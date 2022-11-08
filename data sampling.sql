@@ -89,7 +89,7 @@ select_8 = connection.execute('''
 pprint(f'Имя исполнителя(-ей), написавшего самый короткий по продолжительности трек: {select_8}')
 
 #9.название альбомов, содержащих наименьшее количество треков
-select_6 = connection.execute('''
+select_9 = connection.execute('''
     SELECT a.title, count(s.id)
     FROM Album a
     JOIN Songs s ON a.id_artist = s.id_album
